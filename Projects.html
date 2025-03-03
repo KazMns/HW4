@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Projects.css">
+    <style>
+        fancy-card {
+            display: block;
+            border: 2px solid #4a90e2;
+            padding: 20px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            max-width: 300px;
+            margin: 20px auto;
+        }
+
+        fancy-card h2 {
+            margin: 0;
+            font-size: 1.5em;
+            color: #1e88e5;
+        }
+
+        fancy-card p {
+            font-size: 1em;
+            color: #333;
+        }
+                
+    </style>
+</head>
+<body>
+    <header>
+        <hgroup>
+            <h1>My Portfolio</h1>
+        </hgroup>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="AboutMe.html">About Me</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Login.html">Login</a></li>
+                <li><a href="contactFormjs.html">JSForm</a></li>                           
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <fancy-card>
+                <h2>My Projects</h2>
+                <p>Here is a list of the projects I worked on over the past few years</p>
+            </fancy-card>        
+            <h2>Project Timeline</h2>
+            <div class="timeline">
+                <article class="timeline-item right">
+                    <h3>Project 1 - Web Development</h3>
+                    <p><strong>Date:</strong> January - April 2024</p>
+                    <ul>
+                        <li>Developed a web employee portal for communication between technicians, HR, and employees.</li>
+                        <li>Used TypeScript React for front-end and Prisma for database management.</li>
+                        <li>Built a ticketing system for issue reporting, including creation, deletion, and filtering.</li>
+                    </ul>
+                </article>
+            
+                <article class="timeline-item left">
+                    <h3>Project 2 - SaaS Project Intern</h3>
+                    <p><strong>Date:</strong> June - July 2024</p>
+                    <ul>
+                        <li>Worked on a SaaS project based on TypeScript React.</li>
+                        <li>Enhanced my understanding of Agile methodologies.</li>
+                    </ul>
+                </article>
+            
+                <article class="timeline-item right">
+                    <h3>Project 3 - Voting App</h3>
+                    <p><strong>Date:</strong> January - April 2023</p>
+                    <ul>
+                        <li>Gained understanding of OOP.</li>
+                        <li>Created a Voting App in Java to allow students to vote on campus.</li>
+                        <li>Designed the UI/UX using Swing.</li>
+                    </ul>
+                </article>
+            </div>            
+        </section>
+    
+        <aside>
+            <h2>My Skills</h2>
+            <pre>
+    HTML        CSS         JavaScript    React
+    Node.js     Express     MongoDB       Java
+            </pre>
+        </aside>
+    </main>
+    <a href="resume.pdf" download class="download-btn">
+        <img src="download.svg" alt="Download Icon">
+    </a>
+    <button id="theme-toggle" aria-label="Toggle theme">
+        🌙
+    </button>
+    <script src="themeswitcher.js" defer></script>   
+</body>
+</html>
